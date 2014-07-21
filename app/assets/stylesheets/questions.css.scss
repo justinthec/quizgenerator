@@ -1,0 +1,78 @@
+// Place all the styles related to the questions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+	margin-top: 70px;
+	background-color: #e9eaed;
+}
+
+.navbar-default {
+	background-color: #03a9f4;
+	border-color: #03a9f4;
+}
+
+.navbar-default .navbar-brand {
+	color: #ffffff;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+	color: #ffffff;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: #ffffff;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+	color: #eeeeee;
+}
+
+.navbar-default .navbar-toggle {
+    background-color: #017BB0;
+    border-color: #017BB0;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #015C83;
+    border-color: #015C83;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.page-header {
+	border-color: #aaa;
+}
+
+.question {
+	position: relative;
+	border-color: #BCE4D5;
+}
+
+.question .panel-heading {
+	background-color: #D5FDEE;
+	color: #567E6F;
+}
+
+.question .panel-body {
+	font-size: 14px;
+}
+
+.question-show {
+	position:absolute; 
+	  width:100%;
+	  height:100%;
+	  top:0;
+	  left: 0;
+
+	  /* edit: added z-index */
+	  z-index: 1;
+}
+
+.question-link {
+	position: relative;
+	z-index: 2;
+}/*#ff5252*/
