@@ -2,10 +2,16 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+// Body Styles
+
 body {
 	margin-top: 70px;
 	background-color: #e9eaed;
 }
+
+
+// Navbar Styles
 
 .navbar-default {
 	background-color: #03a9f4;
@@ -43,25 +49,31 @@ body {
     background-color: #fff;
 }
 
+
+// Page Header Styles
+
 .page-header {
 	border-color: #aaa;
 }
 
-.question {
+
+// Question Panel Styles
+
+.question-panel {
 	position: relative;
 	border-color: #BCE4D5;
 }
 
-.question .panel-heading {
+.question-panel .panel-heading {
 	background-color: #D5FDEE;
 	color: #567E6F;
 }
 
-.question .panel-body {
+.question-panel .panel-body {
 	font-size: 14px;
 }
 
-.question-show {
+.question-panel-show {
 	position:absolute; 
 	  width:100%;
 	  height:100%;
@@ -72,18 +84,21 @@ body {
 	  z-index: 1;
 }
 
-.question-link {
+.question-panel-link {
 	position: relative;
 	z-index: 2;
 }/*Red: #ff5252*/
 
-.question .panel-body .controls{
+.question-panel .panel-body .controls{
 	opacity: 0;
 }
 
-.question.hover .panel-body .controls {
+.question-panel.hover .panel-body .controls {
 	opacity: 100;
 }
+
+
+// Circle Button Styles
 
 .circle-button {
 	background-color: #03a9f4;

@@ -13,11 +13,31 @@
 
   <div class="field">
     <%= f.label :question %><br />
-    <%= f.text_field :question %>
+    <%= f.text_area :question, rows: 5%>
   </div>
   <div class="field">
-    <%= f.label :answer %><br />
-    <%= f.text_field :answer %>
+    <%= f.label :answer_a, "Answer A" %><br />
+    <%= f.text_area :answer_a, rows: 2 %>
+  </div>
+  <div class="field">
+    <%= f.label :answer_b, "Answer B" %><br />
+    <%= f.text_area :answer_b, rows: 2 %>
+  </div>
+  <div class="field">
+    <%= f.label :answer_c, "Answer C" %><br />
+    <%= f.text_area :answer_c, rows: 2 %>
+  </div>
+  <div class="field">
+    <%= f.label :answer_d, "Answer D" %><br />
+    <%= f.text_area :answer_d, rows: 2 %>
+  </div>
+  <div class="field">
+    <%= f.label :correct_answer, "Correct Answer" %><br />
+    <%= f.text_field :correct_answer %>
+  </div>
+  <div class="field">
+    <%= f.label :category %><br />
+    <%= f.text_field :category %>
   </div>
   <div class="field">
     <%= f.label :difficulty %><br />

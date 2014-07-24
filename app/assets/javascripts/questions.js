@@ -3,7 +3,21 @@
 // You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 
 $(document).ready(function(){
-	$('.question').hover(function(event){
+
+	// Hover Events
+	$('.question-panel').hover(function(event){
 		$(this).toggleClass("hover");
 	});
+
+
+	// Isotope Script - Masonry Layout
+	var $container = $('#questions-container');
+	// init
+	$container.isotope({
+	  // options
+	  itemSelector: '.question',
+	  layoutMode: "masonry"
+	});
+
+	
 });
