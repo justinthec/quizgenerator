@@ -97,6 +97,12 @@ body {
 	opacity: 100;
 }
 
+@media (max-width: 767px) {
+	.question-panel .panel-body .controls{
+		opacity: 100;
+	}
+}
+
 
 // Circle Button Styles
 

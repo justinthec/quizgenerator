@@ -33,7 +33,7 @@
   </div>
   <div class="field">
     <%= f.label :correct_answer, "Correct Answer" %><br />
-    <%= f.text_field :correct_answer %>
+    <%= f.select :correct_answer, options_for_select([['A', "A"], ['B', "B"], ['C', "C"], ['D', "D"]]) %>
   </div>
   <div class="field">
     <%= f.label :category %><br />
@@ -41,7 +41,7 @@
   </div>
   <div class="field">
     <%= f.label :difficulty %><br />
-    <%= f.number_field :difficulty %>
+    <%= f.number_field :difficulty, min: 1 %>
   </div>
   <div class="actions">
     <%= f.submit %>
