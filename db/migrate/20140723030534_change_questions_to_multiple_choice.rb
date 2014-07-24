@@ -4,7 +4,7 @@ class ChangeQuestionsToMultipleChoice < ActiveRecord::Migration
   	add_column :questions, :answer_b, :text
   	add_column :questions, :answer_c, :text
   	add_column :questions, :answer_d, :text
-  	remove_column :questions, :question, :string
+  	remove_column :questions, :question
   	add_column :questions, :question, :text
   	rename_column :questions, :answer, :correct_answer
   	add_column :questions, :category, :string
