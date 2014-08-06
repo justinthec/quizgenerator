@@ -1,4 +1,7 @@
 Quizgenerator::Application.routes.draw do
+  resources :quizzes
+
+
   resources :questions
 
   root to: 'questions#index'

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140723030534) do
+ActiveRecord::Schema.define(:version => 20140804225849) do
 
   create_table "questions", :force => true do |t|
     t.string   "correct_answer"
@@ -24,6 +24,19 @@ ActiveRecord::Schema.define(:version => 20140723030534) do
     t.text     "answer_d"
     t.text     "question"
     t.string   "category"
+  end
+
+  create_table "questions_quizzes", :id => false, :force => true do |t|
+    t.integer "question_id"
+    t.integer "quiz_id"
+  end
+
+  add_index "questions_quizzes", ["question_id"], :name => "index_questions_quizzes_on_question_id"
+  add_index "questions_quizzes", ["quiz_id"], :name => "index_questions_quizzes_on_quiz_id"
+
+  create_table "quizzes", :force => true do |t|
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
 end
