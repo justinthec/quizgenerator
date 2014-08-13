@@ -3,14 +3,6 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-// Body Styles
-
-body {
-	margin-top: 70px;
-	background-color: #e9eaed;
-}
-
-
 // Navbar Styles
 
 .navbar-default {
@@ -120,4 +112,20 @@ body {
 .circle-button:hover {
 	background-color: #0090DB;
 	border-color: #0090DB;
+}
+
+
+// Select Box Styles
+
+.form-group select {
+	margin-top: 8px;
+}
+
+
+// Form Actions Styles
+
+.form-group.actions {
+	border-top: 1px solid #dcdee3;
+	padding-top: 15px;
+	margin-bottom: 0px;
 }

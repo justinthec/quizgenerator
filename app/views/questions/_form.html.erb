@@ -1,4 +1,4 @@
-<%= form_for(@question) do |f| %>
+<%= form_for(@question, html: { class: "form-horizontal", role: "form" }) do |f| %>
   <% if @question.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@question.errors.count, "error") %> prohibited this question from being saved:</h2>
@@ -11,39 +11,63 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :question %><br />
-    <%= f.text_area :question, rows: 5%>
+  <div class="form-group">
+    <%= f.label :question, class: "col-sm-2 control-label" %>
+    <div class="col-sm-8">
+      <%= f.text_area :question, rows: 5, class: "form-control" %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :answer_a, "Answer A" %><br />
-    <%= f.text_area :answer_a, rows: 2 %>
+  <div class="form-group">
+    <%= f.label :answer_a, "Answer A", class: "col-sm-2 control-label" %>
+    <div class="col-sm-8">
+      <%= f.text_area :answer_a, rows: 2, class: "form-control" %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :answer_b, "Answer B" %><br />
-    <%= f.text_area :answer_b, rows: 2 %>
+  <div class="form-group">
+    <%= f.label :answer_b, "Answer B", class: "col-sm-2 control-label" %>
+    <div class="col-sm-8">
+      <%= f.text_area :answer_b, rows: 2, class: "form-control" %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :answer_c, "Answer C" %><br />
-    <%= f.text_area :answer_c, rows: 2 %>
+  <div class="form-group">
+    <%= f.label :answer_c, "Answer C", class: "col-sm-2 control-label" %>
+    <div class="col-sm-8">
+      <%= f.text_area :answer_c, rows: 2, class: "form-control" %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :answer_d, "Answer D" %><br />
-    <%= f.text_area :answer_d, rows: 2 %>
+  <div class="form-group">
+    <%= f.label :answer_d, "Answer D", class: "col-sm-2 control-label" %>
+    <div class="col-sm-8">
+      <%= f.text_area :answer_d, rows: 2, class: "form-control" %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :correct_answer, "Correct Answer" %><br />
-    <%= f.select :correct_answer, options_for_select([['A', "A"], ['B', "B"], ['C', "C"], ['D', "D"]]) %>
+  <div class="form-group">
+    <%= f.label :correct_answer, "Correct Answer", class: "col-sm-2 control-label" %>
+    <div class="col-sm-8">
+      <%= f.select :correct_answer, [['A', "A"], ['B', "B"], ['C', "C"], ['D', "D"]] %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :category %><br />
-    <%= f.text_field :category %>
+  <div class="form-group">
+    <%= f.label :category_id, "Category", class: "col-sm-2 control-label" %>
+    <div class="col-sm-8">
+      <%= f.text_field :category_id, class: "form-control" %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :difficulty %><br />
-    <%= f.number_field :difficulty, min: 1 %>
+  <div class="form-group">
+    <%= f.label :sub_category_id, "Sub Category", class: "col-sm-2 control-label" %>
+    <div class="col-sm-8">
+      <%= f.text_field :sub_category_id, class: "form-control" %>
+    </div>
   </div>
-  <div class="actions">
-    <%= f.submit %>
+  <div class="form-group">
+    <%= f.label :difficulty, class: "col-sm-2 control-label" %>
+    <div class="col-sm-8">
+      <%= f.number_field :difficulty, min: 1, class: "form-control" %>
+    </div>
+  </div>
+  <div class="form-group actions">
+    <div class="col-sm-offset-2 col-sm-10">
+      <%= f.submit class: "btn btn-success" %>
+    </div>
   </div>
 <% end %>
