@@ -56,6 +56,10 @@
 	border-color: #BCE4D5;
 }
 
+.question-panel.hover {
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
 .question-panel .panel-heading {
 	background-color: #D5FDEE;
 	color: #567E6F;
@@ -101,17 +105,19 @@
 .circle-button {
 	background-color: #03a9f4;
 	border-color: #03a9f4;
-	border-radius: 30px;
-	padding: 10px 20px 10px 20px;
+	border-radius: 50%;
+	padding: 6px 18px 6px 18px;
 	font-size: 30px;
 	position: relative;
 	z-index: 100;
-	margin-right: 5px;
+	margin-top: 5px;
+	margin-right: 10px;
 }
 
 .circle-button:hover {
-	background-color: #0090DB;
-	border-color: #0090DB;
+	background-color: #1DC3FF;
+	border-color: #1DC3FF;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 }
 
 

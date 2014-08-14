@@ -25,7 +25,7 @@ class CategoriesController < ApplicationController
   # GET /categories/new.json
   def new
     @category = Category.new
-    3.times do 
+    1.times do 
       @category.sub_categories.build
     end
     respond_to do |format|

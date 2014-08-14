@@ -1,7 +1,11 @@
 <div class="form-group">
   <%= f.label :name, "Sub Category", class: "col-sm-3 control-label" %>
-  <div class="col-sm-6">
+  <div class="col-sm-5">
     <%= f.text_field :name, class: "form-control" %>
+  </div>
+  <div class="col-sm-1 with-colorpicker">
+    <%= f.hidden_field :color, value: f.object.color || '' %>
+    <a class="color-button pull-left"><i></i></a>
   </div>
   <div class="col-sm-1">
   	<%= link_to_remove_fields "Remove", f, "btn btn-danger btn-xs pull-right" %>

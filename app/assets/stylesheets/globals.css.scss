@@ -12,3 +12,18 @@ body {
 .btn-xs {
 	margin-top: 6px;
 }
+
+
+// Color-Button Styles
+
+.color-button {
+}
+
+.colorpicker-element .color-button i {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  vertical-align: text-top;
+  cursor: pointer;
+}

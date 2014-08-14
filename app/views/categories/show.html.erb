@@ -7,7 +7,7 @@
 
 <ul>
 	<% for sub_category in @category.sub_categories %>
-		<li><%= sub_category.name %></li>
+		<li><%= sub_category.name %> - <%= sub_category.color %></li>
 	<% end %>
 </ul>
 
