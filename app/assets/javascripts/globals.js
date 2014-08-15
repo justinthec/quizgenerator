@@ -37,6 +37,6 @@ function add_color_pickers() {
 }
 
 // Ready Call
-$(function(){
+$(document).ready(function(){
     add_color_pickers();
 });
